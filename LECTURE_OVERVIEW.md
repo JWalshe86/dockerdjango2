@@ -1,20 +1,44 @@
 # <span style="color:orange">Lecture overview</span>
 
-Welcome to the next installment of our course, where we guide you through the process of getting started with a Dockerized Django application. In this video tutorial, we'll hold your hand as we walk you through the steps of cloning a GitHub repository, understanding the project's file and folder structure, and preparing to dive into coding.
+In this lecture, we will wire up essential packages that play a crucial role in making our project function seamlessly. These packages have been carefully chosen to enhance the capabilities and performance of our Django project. We will be integrating the following packages:
 
-We'll focus on the practical aspects of acquiring the project and gaining an understanding of its inner workings.
+- black==23.7.0
+- celery==5.3.1
+- django-celery-beat==2.5.0
+- django-celery-results==2.5.1
+- django-ckeditor==6.6.1
+- django-enumfield==3.1
+- django-extensions==3.2.3
+- django-redis==5.3.0
+- flake8==6.0.0
+- flower==2.0.0
+- Pillow==10.0.0
+- psycopg2-binary
+- python-dotenv==1.0.0
+- redis==4.6.0
+- requests==2.31.0
+- six==1.16.0
+- stripe==5.5.0
+- django-debug-toolbar==4.1.0
+- s3transfer==0.6.1
+- sentry-sdk==1.28.1
+- gunicorn==21.1.0
+- boto3==1.28.5
+- botocore==1.31.5
+- django-storages==1.13.2
 
-During this hands-on tutorial, you will:
+By integrating these packages, you'll unlock a wide range of functionalities, including automated code formatting (black), task queue management (Celery), and real-time monitoring of Celery tasks (django-celery-beat and django-celery-results). Additionally, you'll have access to an advanced rich text editor (django-ckeditor) and ENUM support (django-enumfield).
 
-1. Discover the GitHub Repository: Learn how to find and select a suitable GitHub repository that contains the Dockerized Django application you'll be working with.
+Other packages like django-extensions, django-redis, flake8, and Pillow will further streamline your development process, enhance caching, ensure code quality, and handle images effectively. Integrating Stripe will enable easy payment processing, while django-debug-toolbar helps in debugging and optimizing performance.
 
-2. Clone the Repository: Follow along as we guide you through the process of cloning the repository, creating a local copy on your machine for exploration and modification.
+To boost scalability and reliability, we'll leverage AWS S3 storage using django-storages, with boto3 and botocore providing the necessary integration with AWS services. For error tracking, we'll implement Sentry with sentry-sdk.
 
-3. Examine the File and Folder Structure: Take a closer look at the project's file and folder structure, understanding the purpose of key files and directories.
+Through this hands-on integration of packages, your Django project will be enriched with powerful features, setting the stage for a highly functional and efficient web application ready for production deployment.
 
-4. Preparing for Coding: Gain confidence as we explain the essential components and dependencies of the Dockerized Django application, setting the stage for your coding endeavors.
+# <span style="color:orange">Code changes</span>
 
-5. By the end of this video, you'll have the necessary foundation to start coding with the Dockerized Django application. We'll help you navigate through the initial setup process, ensuring you feel comfortable with the project's structure and ready to embark on your coding journey.
+You can find all code changes [here](https://github.com/bobby-didcoding/build-and-deploy-dockerised-django-app-handbook/pull/2/files).
+
 
 ***
 ***
