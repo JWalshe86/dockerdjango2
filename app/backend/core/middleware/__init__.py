@@ -1,12 +1,8 @@
 # --------------------------------------------------------------
 # App imports
 # --------------------------------------------------------------
-
-from core.forms.contact import ContactForm
-from core.forms.generic_newsletter import GenericNewsLetterForm
-
+from core.middleware.newsletter import NewsLetterFormMiddleware
 
 __all__ = [
-    ContactForm,
-    GenericNewsLetterForm,
+    NewsLetterFormMiddleware,
 ]
